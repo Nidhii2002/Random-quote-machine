@@ -8,7 +8,7 @@ import "./App.css";
 function App() {
   const [quotes, setQuotes] = React.useState([]);
   const [randomQuote, setRandomQuote] = React.useState("");
-  const [color, setColor] = React.useState("#fff");
+  //const [color, setColor] = React.useState("#fff");
 
   React.useEffect(() => {
     async function fetchData() {
@@ -27,16 +27,16 @@ function App() {
     let randomIndex = Math.floor(Math.random() * quotes.length);
     setRandomQuote(quotes[randomIndex]);
 
-    var randomColor = require("randomcolor");
-    var color = randomColor();
+    // var randomColor = require("randomcolor");
+    // var color = randomColor();
 
-    setColor(color);
+    // setColor(color);
   };
 
-  const bg = {
-    backgroundColor: color,
-    minHeight: "100vh",
-  };
+  // const bg = {
+  //   backgroundColor: color,
+  //   minHeight: "100vh",
+  // };
 
   return (
     <div>
